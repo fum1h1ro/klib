@@ -145,9 +145,13 @@
 #define kliter_t(name) kl1_##name
 #define klist_t(name) kl_##name##_t
 #define kl_val(iter) ((iter)->data)
+#define kl_prev(iter) ((iter)->prev)
 #define kl_next(iter) ((iter)->next)
 #define kl_begin(kl) ((kl)->head)
 #define kl_end(kl) ((kl)->tail)
+#define kl_rbegin(kl) kl_prev(kl_end(kl))
+#define kl_rend(kl) (NULL)
+
 
 #define kl_init(name) kl_init_##name()
 #define kl_destroy(name, kl) kl_destroy_##name(kl)

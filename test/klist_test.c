@@ -25,8 +25,13 @@ int main()
 
 	*kl_pushp(32, kl) = 70;
 
+    printf("forward:\n");
 	for (p = kl_begin(kl); p != kl_end(kl); p = kl_next(p))
 		printf("%d\n", kl_val(p));
+    printf("backward:\n");
+    for (p = kl_rbegin(kl); p != kl_rend(kl); p = kl_prev(p))
+        printf("%d\n", kl_val(p));
+
 	printf("size: %ld\n", kl->size);
 	kl_destroy(32, kl);
 	return 0;
