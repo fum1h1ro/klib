@@ -6,7 +6,7 @@
 
 #define __KDQ_TYPE(type) \
 	typedef struct { \
-		size_t front:58, bits:6, count, mask; \
+		size_t front, bits, count, mask; \
 		type *a; \
 	} kdq_##type##_t;
 
