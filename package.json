@@ -1,0 +1,7 @@
+{
+    "name": "klib",
+    "version": "0.1.0",
+    "repo": "fum1h1ro/klib",
+    "description": "A small C library collection",
+    "license": "MIT"
+}
