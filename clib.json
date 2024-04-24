@@ -20,7 +20,6 @@
         "khashl.h",
         "khmm.h",
         "klist.h",
-        "klist_ex.h",
         "kmath.h",
         "knetfile.h",
         "knhx.h",
